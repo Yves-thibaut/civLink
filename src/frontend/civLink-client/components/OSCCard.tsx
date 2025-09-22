@@ -2,11 +2,11 @@
 
 import { useState } from 'react';
 import { MapPin, Users, Briefcase, ExternalLink, Mail, Phone, MessageCircle } from 'lucide-react';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Badge } from '@/src/frontend/components/ui/badge';
-import { Card, CardContent, CardHeader } from '@/src/frontend/components/ui/card';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/src/frontend/components/ui/dialog';
-import { OSC } from '@/src/frontend/lib/data';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { OSC } from '@/lib/data';
 
 interface OSCCardProps {
   osc: OSC;

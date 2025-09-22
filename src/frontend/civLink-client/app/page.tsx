@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Users, Globe, TrendingUp, Award, Heart, MapPin, CheckCircle } from 'lucide-react';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Card, CardContent } from '@/src/frontend/components/ui/card';
-import { Badge } from '@/src/frontend/components/ui/badge';
-import { statistics } from '@/src/frontend/lib/data';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { statistics } from '@/lib/data';
 
 export default function HomePage() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);

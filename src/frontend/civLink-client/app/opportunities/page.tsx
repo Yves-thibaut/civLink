@@ -1,14 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '@/src/frontend/components/Layout';
-import OpportunityCard from '@/src/frontend/components/OpportunityCard';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Input } from '@/src/frontend/components/ui/input';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/src/frontend/components/ui/tabs';
-import { Badge } from '@/src/frontend/components/ui/badge';
+import Layout from '@/components/Layout';
+import OpportunityCard from '@/components/OpportunityCard';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Badge } from '@/components/ui/badge';
 import { Search, Filter, DollarSign, Calendar, MapPin, TrendingUp } from 'lucide-react';
-import { opportunities } from '@/src/frontend/lib/data';
+import { opportunities } from '@/lib/data';
 
 export default function OpportunitiesPage() {
   const [searchTerm, setSearchTerm] = useState('');

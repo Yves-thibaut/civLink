@@ -1,14 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '@/src/frontend/components/Layout';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/src/frontend/components/ui/card';
-import { Badge } from '@/src/frontend/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/src/frontend/components/ui/tabs';
+import Layout from '@/components/Layout';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Edit, Plus, Share2, Heart, MessageCircle, Users, Briefcase, MapPin, Calendar, Globe, Mail, Phone, Shield, Award, TrendingUp } from 'lucide-react';
-import PostCard from '@/src/frontend/components/PostCard';
-import { posts } from '@/src/frontend/lib/data';
+import PostCard from '@/components/PostCard';
+import { posts } from '@/lib/data';
 
 export default function ProfilePage() {
   const [activeTab, setActiveTab] = useState('posts');

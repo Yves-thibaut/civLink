@@ -1,14 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '@/src/frontend/components/Layout';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/src/frontend/components/ui/card';
-import { Input } from '@/src/frontend/components/ui/input';
-import { Textarea } from '@/src/frontend/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/src/frontend/components/ui/select';
-import { Badge } from '@/src/frontend/components/ui/badge';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/src/frontend/components/ui/dialog';
+import Layout from '@/components/Layout';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Badge } from '@/components/ui/badge';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { ArrowLeft, Image, Video, FileText, Calendar, MapPin, Users, Hash, Plus, X } from 'lucide-react';
 
 export default function CreatePostPage() {

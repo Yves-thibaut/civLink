@@ -1,13 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '@/src/frontend/components/Layout';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Input } from '@/src/frontend/components/ui/input';
-import { Card, CardContent, CardHeader } from '@/src/frontend/components/ui/card';
-import { Badge } from '@/src/frontend/components/ui/badge';
+import Layout from '@/components/Layout';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { Search, Send, Paperclip, Phone, Video, MoreVertical, Plus, MessageCircle, Users } from 'lucide-react';
-import { oscs } from '@/src/frontend/lib/data';
+import { oscs } from '@/lib/data';
 
 export default function MessagesPage() {
   const [selectedConversation, setSelectedConversation] = useState('1');

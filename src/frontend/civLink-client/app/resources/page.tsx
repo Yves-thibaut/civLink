@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '@/src/frontend/components/Layout';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/src/frontend/components/ui/card';
-import { Badge } from '@/src/frontend/components/ui/badge';
-import { Input } from '@/src/frontend/components/ui/input';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/src/frontend/components/ui/tabs';
+import Layout from '@/components/Layout';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Search, Download, FileText, Video, BookOpen, Users, Calendar, Star, ExternalLink, Filter } from 'lucide-react';
 
 export default function ResourcesPage() {

@@ -1,14 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '@/src/frontend/components/Layout';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/src/frontend/components/ui/card';
-import { Input } from '@/src/frontend/components/ui/input';
-import { Textarea } from '@/src/frontend/components/ui/textarea';
-import { Switch } from '@/src/frontend/components/ui/switch';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/src/frontend/components/ui/select';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/src/frontend/components/ui/tabs';
+import Layout from '@/components/Layout';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Switch } from '@/components/ui/switch';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ArrowLeft, Save, Bell, Shield, Globe, User, Mail, Phone, MapPin, Globe as GlobeIcon } from 'lucide-react';
 
 export default function SettingsPage() {

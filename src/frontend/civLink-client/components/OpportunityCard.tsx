@@ -1,10 +1,10 @@
 'use client';
 
 import { Calendar, MapPin, DollarSign, Building, Tag } from 'lucide-react';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Badge } from '@/src/frontend/components/ui/badge';
-import { Card, CardContent, CardHeader } from '@/src/frontend/components/ui/card';
-import { Opportunity } from '@/src/frontend/lib/data';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Opportunity } from '@/lib/data';
 
 interface OpportunityCardProps {
   opportunity: Opportunity;

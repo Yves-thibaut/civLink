@@ -1,10 +1,10 @@
 'use client';
 
 import { Heart, MessageCircle, Share2, MoreHorizontal } from 'lucide-react';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Card, CardContent, CardHeader } from '@/src/frontend/components/ui/card';
-import { Badge } from '@/src/frontend/components/ui/badge';
-import { Post } from '@/src/frontend/lib/data';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Post } from '@/lib/data';
 
 interface PostCardProps {
   post: Post;

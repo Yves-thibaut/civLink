@@ -1,14 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '@/src/frontend/components/Layout';
-import OSCCard from '@/src/frontend/components/OSCCard';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Input } from '@/src/frontend/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/src/frontend/components/ui/select';
-import { Badge } from '@/src/frontend/components/ui/badge';
+import Layout from '@/components/Layout';
+import OSCCard from '@/components/OSCCard';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Badge } from '@/components/ui/badge';
 import { Search, Filter, Grid, List, MapPin } from 'lucide-react';
-import { oscs, sectors, countries } from '@/src/frontend/lib/data';
+import { oscs, sectors, countries } from '@/lib/data';
 
 export default function DirectoryPage() {
   const [searchTerm, setSearchTerm] = useState('');

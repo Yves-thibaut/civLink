@@ -1,13 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '@/src/frontend/components/Layout';
-import OSCCard from '@/src/frontend/components/OSCCard';
-import { Badge } from '@/src/frontend/components/ui/badge';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/src/frontend/components/ui/card';
+import Layout from '@/components/Layout';
+import OSCCard from '@/components/OSCCard';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Users, Briefcase, Filter } from 'lucide-react';
-import { oscs, sectors } from '@/src/frontend/lib/data';
+import { oscs, sectors } from '@/lib/data';
 
 export default function MapPage() {
   const [selectedSector, setSelectedSector] = useState('all');

@@ -4,10 +4,10 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Home, Users, Briefcase, MessageCircle, Map, Settings, Bell, Search, User, LogOut, Plus, Edit, Shield, BookOpen, Award, Building } from 'lucide-react';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Input } from '@/src/frontend/components/ui/input';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/src/frontend/components/ui/dropdown-menu';
-import { cn } from '@/src/frontend/lib/utils';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { cn } from '@/lib/utils';
 
 const navigation = [
   { name: 'Accueil', href: '/', icon: Home },

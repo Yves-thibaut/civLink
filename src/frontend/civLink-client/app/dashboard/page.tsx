@@ -1,15 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import Layout from '@/src/frontend/components/Layout';
-import PostCard from '@/src/frontend/components/PostCard';
-import OSCCard from '@/src/frontend/components/OSCCard';
-import OpportunityCard from '@/src/frontend/components/OpportunityCard';
-import { Button } from '@/src/frontend/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/src/frontend/components/ui/card';
-import { Badge } from '@/src/frontend/components/ui/badge';
+import Layout from '@/components/Layout';
+import PostCard from '@/components/PostCard';
+import OSCCard from '@/components/OSCCard';
+import OpportunityCard from '@/components/OpportunityCard';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { TrendingUp, Users, Briefcase, MessageCircle, Plus, Calendar, Bell } from 'lucide-react';
-import { posts, oscs, opportunities, statistics } from '@/src/frontend/lib/data';
+import { posts, oscs, opportunities, statistics } from '@/lib/data';
 
 export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState('feed');
