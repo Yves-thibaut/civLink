@@ -1,0 +1,43 @@
+
+networks:
+  proxy:
+    name: nginx-proxy
+    external: true
+services:
+  civlink-client-proxy:
+    image: nginx:alpine
+    container_name: civlink-client-proxy
+    restart: always
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    environment:
+      VIRTUAL_PORT: 80
+      VIRTUAL_HOST: civlink.modernworksdigital.com
+      LETSENCRYPT_HOST: civlink.modernworksdigital.com
+    networks:
+      - proxy # Réseau partagé avec l'app
+    healthcheck:
+      test: [ "CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    depends_on:
+      - civlink-client
+
+  civlink-client:
+    build:
+      context: ./../../../../src/frontend/civLink-client
+      dockerfile: ../../Dockerfile
+      args:
+        APP_NAME: civLink-client
+    container_name: civLink-client
+    restart: unless-stopped
+    networks:
+      - proxy # Même réseau que le proxy
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+
+    # ports:
+    #   - "9095:3000"
