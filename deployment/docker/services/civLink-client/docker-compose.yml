@@ -28,7 +28,7 @@ services:
   civlink-client:
     build:
       context: ./../../../../src/frontend/civLink-client
-      dockerfile: ../../Dockerfile
+      dockerfile: ../Dockerfile
       args:
         APP_NAME: civLink-client
     container_name: civLink-client
